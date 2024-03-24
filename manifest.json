@@ -1,0 +1,27 @@
+{
+    "manifest_version": 3,
+    "name": "Just Google Selected Text",
+    "description": "選択中のテキストをGoogle検索するショートカットキーを追加する。ショートカットキーは拡張機能ページから編集可能。",
+    "permissions": [
+        "activeTab",
+        "scripting"
+    ],
+    "version": "0.0.0",
+    "background": {
+        "service_worker": "background.js"
+    },
+    "commands": {
+        "google_selected_text_in_new_tab": {
+            "description": "新規タブに移動してGoogle検索する",
+            "suggested_key": {
+                "default": "Alt+1"
+            }
+        },
+        "google_selected_text_background": {
+            "description": "新規タブに移動せず、新規タブでGoogle検索する",
+            "suggested_key": {
+                "default": "Alt+Shift+1"
+            }
+        }
+    }
+}
